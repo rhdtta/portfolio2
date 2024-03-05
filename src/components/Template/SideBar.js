@@ -9,33 +9,39 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/me.jpeg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
-        <p><a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a></p>
+        <h2>Rohit Dutta</h2>
+        <p>Hi, I&apos;m Rohit. I am a <a href="https://www.iitp.ac.in/">IIT Patna</a> graduate,
+        and Associate Developer at <a href="https://www.vml.com/india">VML</a>.
+        </p>
+        {/* <ul className="actions">
+          <li>
+            {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          </li>
+        </ul> */}
       </header>
+      {!window.location.pathname.includes('/contact') && <ContactIcons /> }
+      
     </section>
 
-    <section className="blurb">
+    {/* <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni,
-        and the VP of Engineering at <a href="https://smileidentity.com">Smile Identity</a>. Previously,
-        I was the co-founder and CTO of <a href="https://arthena.com">Arthena</a>
-        , co-founder of <a href="https://matroid.com">Matroid</a>, and worked at
-        {' '}<a href="https://planet.com">Planet</a> and <a href="https://facebook.com">Facebook</a>.
+      <p>Hi, I&apos;m Rohit. I am a <a href="https://www.iitp.ac.in/">IIT Patna</a> graduate,
+        and Associate Developer at <a href="https://www.vml.com/india">VML</a>.
       </p>
       <ul className="actions">
         <li>
           {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
         </li>
       </ul>
-    </section>
+    </section> */}
 
-    <section id="footer">
+    {/* <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
-    </section>
+      <p className="copyright">&copy; Rohit Dutta <Link to={`${PUBLIC_URL}`}>rhdtta.io</Link>.</p>
+    </section> */}
   </section>
 );
 
